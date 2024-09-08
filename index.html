@@ -1,29 +1,105 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <style>
+
+            body{
+            background-image: url('banner7.jpg');
+            }
+
+            div {
+            width: 500px;
+            height: 50px;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Amatic SC", sans-serif;  
+            position: relative;
+            animation: barmov 5s;
+            animation-fill-mode: both;
+            }
+
+            #line1 {animation-timing-function: ease;}
+            #line2 {animation-timing-function: ease-out;}
+            #line3 {animation-timing-function: linear;}
+            #line4 {animation-timing-function: ease-in-out;}
+            #line5 {animation-timing-function: ease-in;}
+
+            @keyframes barmov {
+            from {left: 0px;}
+            to {left: 400px;}
+            }
+
+            .line1 {
+            background-color: #f4f4f4 !important;
+            }
+            .line2 {
+            background-color: #fde994 !important;
+            }
+            .line3 {
+            background-color: #f5dd7b !important;
+            }
+            .line4 {
+            background-color: #d9b650 !important;
+            }
+            .line5 {
+            background-color: #83580b !important;
+            }
+
+            .para1 {
+            animation-duration: 3s;
+            animation-name: mydata;
+            animation-iteration-count: 1;
+            }
+
+            @keyframes mydata {
+            from {
+                translate: 175vw 2;
+                scale: 150% 3;
+            }
+
+            to {
+                translate: 0 1;
+                scale: 100% 2;
+            }
+
+            }
+
+            h1 {
+            animation-duration: 5s;
+            animation-name: assignment;
+            animation-iteration-count: 1;
+            }
+
+            @keyframes assignment {
+            from {
+                translate: 0 200vw;
+                scale: 100% 3;
+            }
+
+            to {
+                translate: 0 1;
+                scale: 100% 2;
+            }
+            }
+        </style>
+
     </head>
+
     <title>Full Stack Project</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
-    <body>
-        <!--Top Navigation Bar-->
-        <div class="nav-bar">
-            <a href="" class="nav-menu menu-item menu-button">HOME</a>
-            <a href="#new" class="nav-menu menu-item menu-button">New Arrivals</a>
-            <a href="#aboutus" class="nav-menu menu-item menu-button">About Us</a>
-            <a href="#contactus" class="nav-menu menu-item menu-button">Contact Us</a>   
-        </div>
-        <!--Top Banner Image-->
-        <header class="">
-            <img src="images/banner4.png" class="cover-image">
-        </header>
-        <!--New Arrivals-->
-        <div class="new-arrivals" id="new">
-            <h1 class="new">New Arrivala</h1>
-            <h1>PLEASE VISIT</h1>
-            <h2>YOU MAY ALSO LIKE</h2>
-        </div>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+    <body>
+        <h1 style="font-family: Sofia; text-align: center; color: #fff;">Assignment 01</h1>
+        <p class="para1" style="font-family: Sofia;" color: #fff;>Hey, I'm <strong>IRESHS BANDARANAYAKE</strong>, Masters Student in <strong>Digital Systems and Service Development </strong>Program.</p>
+        <hr>
+        <div></div>
+        <div></div>
+        <div id="line1" class="line1">This</div>
+        <div id="line2" class="line2">is</div>
+        <div id="line3" class="line3">my</div>
+        <div id="line4" class="line4">Full Stack Development</div>
+        <div id="line5" class="line5">Assignment</div>
     </body>
 </html>
